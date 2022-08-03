@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{ float x=0;
+float y=0;
+float mul=0;
+    printf("enter two floating number");
+    scanf ("%f",&x);
+       printf("enter two floating number");
+         scanf ("%f",&y);
+    mul = x*y;
+    printf(" the Product :%f", mul);
+    return 0;
+}

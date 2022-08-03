@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+
+int main()
+{int x=0;
+printf("Enter a integer");
+   scanf("%d",&x);
+fflush(stdin);
+fflush(stdout);
+   printf("You entered :%d",x);
+    return 0;
+}

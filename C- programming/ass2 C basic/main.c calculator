@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+  char  x;
+  float a;
+  float b;
+  float result=0;
+  printf( " enter the arithmetic operator");
+  scanf("%c",&x);
+  printf( " enter the two operant");
+  scanf(" %f %f",&a ,&b);
+   //scanf(" %f",&b);
+  switch ( x)
+  {
+  case ('*'):
+      {
+       result =a*b;
+       printf("the result is %f",result) ;
+
+      }
+         break;
+        case ('/'):
+      {
+       result =a/b;
+       printf("the result is %f:",result) ;
+
+      }
+         break;
+      case ( '+'):
+      {
+       result =a+b;
+       printf("the result is %f:",result) ;
+
+      }
+         break;
+      case ( '-'):
+      {
+       result =a-b;
+       printf("the result is %f:",result) ;
+
+      }
+         break;
+  }
+
+    return 0;
+
+}
