@@ -17,8 +17,12 @@ scanf( "%d",&y);
 printf( " \n enter the location\n");
 scanf( "%d",&z);
 
-  for (int i = x-1; i >= z ;i--)
-        arr[i] = arr[i - 1];
+  for (int i = x; i >= z ;i--)
+  {
+
+        arr[i] = arr[i-1 ];
+  }
+  x++;
 
  arr[z-1]=y;
 
