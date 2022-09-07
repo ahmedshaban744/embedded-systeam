@@ -1,5 +1,0 @@
-# depslib dependency file v1.0
-1662404382 source:c:\users\ahmed\onedrive\desktop\ass1\platform_types.h\main.c
-	<stdbool.h>
-	<stdint.h>
-
