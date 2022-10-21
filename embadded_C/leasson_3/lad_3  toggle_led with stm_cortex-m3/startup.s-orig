@@ -1,0 +1,30 @@
+.section .vectors 
+
+   .word 0x20001000  /* stack top address*/
+   .word  rest               /* 1 reset*/
+	.word  vector_handler    /* 2 NMI*/
+	.word  vector_handler    /* 3 hard fault*/
+	.word  vector_handler	 /* 4 MM fault */
+	.word  vector_handler    /*  5 bus fault */
+	.word  vector_handler    /* 6usage fault*/
+	.word  vector_handler    /* 7reserved*/
+	.word  vector_handler    /* 8reserved*/
+	.word  vector_handler    /* 10reserved*/
+	.word  vector_handler   /* 11sv call*/
+	.word  vector_handler    /* 12 Debug resreved*/
+	.word  vector_handler    /* 13reserved*/
+   .word  vector_handler     /* 14 pendsv*/
+   .word  vector_handler     /* 15sys tick*/
+   .word  vector_handler   /* 16 IRQ0*/
+   .word  vector_handler   /* 17IRQ1*/
+   .word  vector_handler    /* 18IQR2*/
+   .word  vector_handler    /* 19 ...*/
+     /* on the IRQ67*/
+   
+  .section .text
+rest:
+	b  main  
+	b .
+.thumb_func
+	vector_handler:
+	b  rest

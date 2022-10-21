@@ -1,0 +1,66 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x08000000         0x00020000         xr
+sram             0x02000000         0x00005000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+
+.text           0x08000000       0xd0
+ *(.vector*)
+ .vectors       0x08000000       0x4c startup.o
+ *(.text*)
+ .text          0x0800004c        0x6 startup.o
+ *fill*         0x08000052        0x2 
+ .text          0x08000054       0x7c main.o
+                0x08000054                main
+ *(.rodata*)
+
+.glue_7         0x080000d0        0x0
+ .glue_7        0x080000d0        0x0 linker stubs
+
+.glue_7t        0x080000d0        0x0
+ .glue_7t       0x080000d0        0x0 linker stubs
+
+.vfp11_veneer   0x080000d0        0x0
+ .vfp11_veneer  0x080000d0        0x0 linker stubs
+
+.v4_bx          0x080000d0        0x0
+ .v4_bx         0x080000d0        0x0 linker stubs
+
+.iplt           0x080000d0        0x0
+ .iplt          0x080000d0        0x0 startup.o
+
+.rel.dyn        0x080000d0        0x0
+ .rel.iplt      0x080000d0        0x0 startup.o
+
+.data           0x080000d0        0x4
+ *(.data*)
+ .data          0x080000d0        0x0 startup.o
+ .data          0x080000d0        0x4 main.o
+                0x080000d0                R_ODR
+
+.igot.plt       0x080000d4        0x0
+ .igot.plt      0x080000d4        0x0 startup.o
+
+.bss            0x02000000        0x0
+ *(.bss*)
+ .bss           0x02000000        0x0 startup.o
+ .bss           0x02000000        0x0 main.o
+LOAD startup.o
+LOAD main.o
+OUTPUT(learn-in-depth-cortex-m3.elf elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x2f
+ .ARM.attributes
+                0x00000000       0x21 startup.o
+ .ARM.attributes
+                0x00000021       0x33 main.o
+
+.comment        0x00000000       0x7e
+ .comment       0x00000000       0x7e main.o
+                                 0x7f (size before relaxing)
