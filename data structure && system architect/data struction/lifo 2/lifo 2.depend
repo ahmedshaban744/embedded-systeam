@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1676579755 source:c:\users\ahmed\onedrive\desktop\code blocks project\lifo 2\lifo.c
+	"LIFO.h"
+
+1676579594 c:\users\ahmed\onedrive\desktop\code blocks project\lifo 2\lifo_buff.h
+
+1676580059 source:c:\users\ahmed\onedrive\desktop\code blocks project\lifo 2\main.c
+	"LIFO.h"
+	"stdio.h"
+	"stdlib.h"
+
+1676579756 c:\users\ahmed\onedrive\desktop\code blocks project\lifo 2\lifo.h
+	"stdio.h"
+

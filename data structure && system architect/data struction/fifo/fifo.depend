@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1676576883 source:c:\users\ahmed\onedrive\desktop\code blocks project\fifo\main.c
+	"FIFO_Buff.h"
+
+1676576544 c:\users\ahmed\onedrive\desktop\code blocks project\fifo\fifo.h
+	"stdio.h"
+	"stdint.h"
+
+1676576397 source:c:\users\ahmed\onedrive\desktop\code blocks project\fifo\fifo.c
+	"FIFO.h"
+
+1676576958 c:\users\ahmed\onedrive\desktop\code blocks project\fifo\fifo_buff.h
+	"stdio.h"
+	"stdint.h"
+

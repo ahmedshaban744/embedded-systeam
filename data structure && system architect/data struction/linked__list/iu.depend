@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1676668831 source:c:\users\ahmed\onedrive\desktop\code blocks project\iu\main.c
+	<stdio.h>
+	<string.h>
+	<conio.h>
+
