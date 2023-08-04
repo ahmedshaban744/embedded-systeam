@@ -1,0 +1,8 @@
+"./Src/main.o"
+"./Src/syscalls.o"
+"./Src/sysmem.o"
+"./Startup/startup_stm32f103c6tx.o"
+"./stm32f103c6_ drivers/inc/keypad_driver/keypad.o"
+"./stm32f103c6_ drivers/inc/lcd_driver/lcd.o"
+"./stm32f103c6_ drivers/inc/seven_segmant_driver/7_segmant.o"
+"./stm32f103c6_ drivers/stm32f103c6_ gpio_drivers.o"
