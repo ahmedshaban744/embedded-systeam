@@ -1,9 +1,0 @@
-stm32f103c6_GPIO_drivers.c:8:9:git_pin_posation	16	static
-stm32f103c6_GPIO_drivers.c:93:6:MCAL_GPIO_INIT	32	static
-stm32f103c6_GPIO_drivers.c:150:6:MCAL_GPIO_DEINIT	16	static
-stm32f103c6_GPIO_drivers.c:201:6:MCAL_GPIO_write_pin	16	static
-stm32f103c6_GPIO_drivers.c:231:6:MCAL_GPIO_write_port	16	static
-stm32f103c6_GPIO_drivers.c:245:9:MCAL_GPIO_look_pin	24	static
-stm32f103c6_GPIO_drivers.c:283:9:MCAL_GPIO_Read_pin	24	static
-stm32f103c6_GPIO_drivers.c:304:10:MCAL_GPIO_Read_port	24	static
-stm32f103c6_GPIO_drivers.c:319:6:MCAL_GPIO_toggle_pin	16	static
