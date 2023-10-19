@@ -1,0 +1,3 @@
+EEPROM.c:8:6:Hall_E2PROM_INIT	48	static
+EEPROM.c:23:9:Hall_E2PROM_Write_NBYTE	296	static
+EEPROM.c:38:9:Hall_E2PROM_read_NBYTE	40	static
