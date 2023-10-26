@@ -1,0 +1,4 @@
+stm32f103c6_ RCC_drivers.c:52:10:MCAL_RCC_Get_Sys_clock	4	static
+stm32f103c6_ RCC_drivers.c:74:10:MCAL_RCC_Get_HClock_clock	8	static
+stm32f103c6_ RCC_drivers.c:85:10:MCAL_RCC_Get_PClock1_clock	8	static
+stm32f103c6_ RCC_drivers.c:96:10:MCAL_RCC_Get_PClock2_clock	8	static
