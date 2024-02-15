@@ -1,0 +1,7 @@
+"./Ahmed_RTOS/My_RTOS_FIFO.o"
+"./Ahmed_RTOS/cortex_mx_porting.o"
+"./Ahmed_RTOS/scheduler.o"
+"./Src/main.o"
+"./Src/syscalls.o"
+"./Src/sysmem.o"
+"./Startup/startup_stm32f103c6tx.o"

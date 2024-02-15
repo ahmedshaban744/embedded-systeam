@@ -1,0 +1,6 @@
+main.c:26:6:clock_init	4	static
+main.c:38:6:taskfun1	8	static
+main.c:59:6:taskfun2	8	static
+main.c:78:6:taskfun3	8	static
+main.c:98:6:taskfun4	8	static
+main.c:121:7:main	24	static

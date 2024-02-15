@@ -1,0 +1,4 @@
+My_RTOS_FIFO.c:10:18:FIFO_Init	24	static
+My_RTOS_FIFO.c:31:18:FIFO_Enqueue	16	static
+My_RTOS_FIFO.c:61:18:FIFO_Dequeue	16	static
+My_RTOS_FIFO.c:83:18:FIFO_IS_FULL	16	static
