@@ -1,0 +1,29 @@
+/**
+ ******************************************************************************
+ * @file           :  MYRTOS OS
+ * @author         : Ahmed shaban mohamed
+ * @brief          : Create Your RTOS (ARM And RTOS Coure) in Master Embedded System Online Diploma
+ * ahmedshaban744@gmail.com
+ 
+ ******************************************************************************
+ */
+
+
+ 
+
+
+Prerequisites
+ MYRTOS Layers
+Create Main Stack/Stack for each Task 
+Create TaskControlFrame (Context Switch/Restore)
+Create Tasks Queues/Buffers
+Create Scheduling Algorithm
+Preemptive Based On Priority 
+Round-robin for tasks which have the same priority
+Case Studies 
+Measure the Performance 
+Maintain and increase the Performance 
+Verified different scenarios 
+
+ 
+ 
