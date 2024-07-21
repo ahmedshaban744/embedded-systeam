@@ -1,0 +1,84 @@
+﻿/*@!Encoding:65001*/
+includes
+{
+ 
+}
+
+variables
+{
+  message speed_Messag2 speed_CMD; 
+  int SPEED_var ;
+
+}
+
+on start{
+  write ("Eng:Ahmed shaban: welcome");
+    @sysvar::led1 = 0;
+    @sysvar::led2 = 0;
+    @sysvar::led3 = 0;
+  
+}
+on message ACC_Message
+{
+ write(" ECU2 sent to ECU1 ACC CMD");
+  if (this.ACC_ON.phys==1)
+  {
+    if(SPEED_var==255)
+    {
+      SPEED_var=255;
+    }
+      else
+      {
+      SPEED_var++;
+      }
+
+    }
+
+  else if (this.ACC_ON.phys==0)
+  {
+       {
+    if(SPEED_var==0)
+    {
+      SPEED_var=0;
+    }
+      else
+      {
+      SPEED_var--;
+      }
+      
+    }
+    
+  }
+    speed_CMD.Speed.phys=SPEED_var;
+    output(speed_CMD) ;
+
+if (SPEED_var >=50)
+  {
+    @sysvar::led1 = 1;
+  
+  }
+   if (SPEED_var >= 100)
+  {
+
+    @sysvar::led2 = 1;
+   
+  }
+  if (SPEED_var >= 150)
+  {
+  
+    @sysvar::led3 = 1;
+  }
+  if (SPEED_var < 50)
+  {
+    @sysvar::led1 = 0;
+  }
+  if (SPEED_var < 100)
+  {
+    @sysvar::led2 = 0;
+  }
+  if (SPEED_var < 150)
+  {
+    @sysvar::led3 = 0;
+  }
+  
+}

@@ -1,0 +1,31 @@
+﻿/*@!Encoding:65001*/
+includes
+{
+
+  
+}
+
+variables
+{
+   msTimer send_timer;
+  const int timer_per=500;
+  message ACC_Message ACC_CMDD;
+  int varable_acc=0; 
+}
+on start
+{
+  write("ENG .ahmed:case study 5");
+  setTimer(send_timer,timer_per);
+}
+on message speed_Messag2
+{
+write("ECU1 resived from ECU2");  
+  
+}
+on timer send_timer{
+    write("ENG .ahmed:case study 5");
+varable_acc=@sysvar::ACC_system_val;
+ ACC_CMDD.ACC_ON.phys =varable_acc;
+  output (ACC_CMDD);
+    setTimer(send_timer,timer_per);
+}
